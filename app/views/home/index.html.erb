@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+        <% if user_signed_in? %>
+            ¡Bienvenido <%= current_user.email %>! 
+            <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => "btn btn-light btn-lg" %> 
+        <% else %>
+            <%= button_to "Iniciar sesión", new_user_session_path, :class => "btn btn-primary btn-info"%> 
+        <% end %>
+        </div>
+
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>¡Bienvenido a HelpLomitos!</h1>
+        <p>Encuentra, localiza y ayuda a perros callejeros, maltratados y abandonados.</p>
+        <a class="btn btn-primary btn-lg" href="/dogs" role="button">Ver Perros</a>
+        <p>
+            <%= button_to 'Obtener información del perro', dogs_path, :method => :get,  :class => "btn btn-primary btn-lg"%>
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Sobre HelpLomitos</h2>
+            <p>
+            HelpLomitos es una plataforma impulsada por la comunidad dedicada a ayudar a perros en necesidad. Nuestra misión es conectar amantes de los perros, voluntarios y organizaciones de rescate para brindar apoyo y encontrar hogares amorosos para perros callejeros, maltratados y abandonados.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h3>Los perros necesitan tu ayuda</h3>
+            <p>
+            Con HelpLomitos, puedes reportar y localizar perros en situación de peligro, compartir información sobre perros rescatados e incluso adoptar un amigo peludo. Juntos, podemos marcar la diferencia en la vida de estas criaturas increíbles.
+            </p>
+            <p>
+            ¡Únete hoy y sé parte de la comunidad de HelpLomitos!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+
+                <div class="caption">You can always count on some dogs to be friendly and welcoming!</div>
+                <img width="100%" src="https://cdn.discordapp.com/attachments/1060989219432054835/1123759712765214801/26be81dd-779f-4e56-886f-f20ef5787a8f.jpg" alt="Sammy the Dog">
+            </p>
+        </div>
+    </div>
+</div>
