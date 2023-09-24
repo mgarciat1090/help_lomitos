@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  Dog: MyString
+  name: MyString
+  breed: MyString
+  age: 1
+  description: MyString
+
+two:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  Dog: MyString
+  name: MyString
+  breed: MyString
+  age: 1
+  description: MyString
